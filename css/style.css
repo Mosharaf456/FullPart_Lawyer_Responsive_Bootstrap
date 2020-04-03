@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header part changing bootstrap*/
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #204f87;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.first{
+    padding-top: .5%!important;
+    padding-bottom: .5%!important;
+
+}
+/* Banner part section ..............*/
+.banner{
+    background-image: url(../images/bannner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* row custom class */
+.hg{
+    min-height: 80vh;
+}
+.hg h1{
+    color: #ffffff;
+    font-size: 57px;
+    text-transform: uppercase;
+    font-family: montserrat bold;
+}
+/* col custom class */
+
+.icon i{
+    color: #fff;
+    font-size: 38px;
+    margin-top: 42px;
+    animation: up-down 1.2s infinite linear;
+    animation-direction: alternate;
+}
+@keyframes up-down{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-50px);
+    }
+}
+.who-we-are{
+    margin-top: 90px;
+
+}
+.heading{
+    padding: 42px 0;
+}
+/* can do using span */
+/* .heading span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #f05428; 
+
+}*/
+/* Or by using hover with before */
+.heading h1{
+    color: #204f87;
+    position: relative;
+
+}
+.heading h1::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 12%;
+    top: 0;
+    left: 0;
+    background-color: #f05428;
+    transition: .6s ease-in-out;
+}
+.heading:hover  h1::before{
+    width: 12%;
+
+}
+
+.whoweare-content{
+
+}
+.whoweare-content p{
+    color: #b0b0b1;
+}
+/*ending Banner part section ..............*/
+
+/*Starting what-we-do part section.............. */
+.what-we-do{
+    background-color: #f7f8f8;
+    padding: 50px 0;
+    background-image: url(../images/what-we-do-04.png);
+    background-repeat: no-repeat;
+    background-size: 900px;
+    background-position: right bottom;
+}
+.heading-two{
+    padding-bottom: 36px;
+}
+.heading-two h1{
+    color: #204f87;
+    position: relative;
+
+}
+.heading-two h1::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 10%;
+    top: 0;
+    left: 40%;
+    background-color: #f05428;
+    transition: .7s ease-in-out;
+}
+.heading-two:hover  h1::before{
+    width: 30%;
+    left: 25%;
+
+}
+/* .......... */
+.what-we{
+    position: relative;
+
+}
+.what-we::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: 1s all ease-in-out;
+    background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7e7cb1+5,2d3185+39&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(126,124,177,0) 0%, rgba(126,124,177,0.05) 5%, rgba(45,49,133,0.39) 39%, rgba(45,49,133,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(126,124,177,0) 0%,rgba(126,124,177,0.05) 5%,rgba(45,49,133,0.39) 39%,rgba(45,49,133,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(126,124,177,0) 0%,rgba(126,124,177,0.05) 5%,rgba(45,49,133,0.39) 39%,rgba(45,49,133,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007e7cb1', endColorstr='#2d3185',GradientType=0 ); /* IE6-9 */
+    ;
+}
+.what-we:hover::before {
+    height: 100%;
+    
+}
+.what-we-content{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    transition: .8s all ease-in-out;
+
+}
+.what-we:hover .what-we-content{
+    opacity: 1;
+    top: 50%;
+}
+.what-we-content h4{
+
+}
+.arrow{
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    color: #fff;
+    transform: translate(-50%, -90%);
+    opacity: 0;
+    transition: .7s all ease-in-out;
+
+}
+.what-we:hover .arrow{
+    opacity: 1;
+    left: 50%;
+}
+/* Ending what-we-do part section.............. */
+/* Start Attorneys section*/
+.attorneys{
+    background-image: url(../images/attoneysBack.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.heading-1{
+
+}
+.attorneys .heading {
+    padding-top: 218px;
+}
+.attorneys .heading h1 {
+    color: #fff;
+
+}
+.attorneys .heading h2 {
+    color: #fff;
+
+}
+.attorneys .heading p{
+    color: #929dcf;
+    
+}
+span{
+    color: #f2622c;
+    font-weight: 500;
+}
+
+.attorneys-content h4{
+
+}
+.attorneys-images{
+
+position: relative;
+
+margin: 15px 0;
+}
+.attorneys-images::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    transition: 1s all ease-in-out;
+    background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7e7cb1+5,2d3185+39&0+0,1+100 */
+    background: -moz-linear-gradient(top,  rgba(126,124,177,0) 0%, rgba(126,124,177,0.05) 5%, rgba(45,49,133,0.39) 39%, rgba(45,49,133,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(126,124,177,0) 0%,rgba(126,124,177,0.05) 5%,rgba(45,49,133,0.39) 39%,rgba(45,49,133,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(126,124,177,0) 0%,rgba(126,124,177,0.05) 5%,rgba(45,49,133,0.39) 39%,rgba(45,49,133,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007e7cb1', endColorstr='#2d3185',GradientType=0 ); /* IE6-9 */
+    ;
+}
+.attorneys-images:hover::before {
+    height: 100%;
+    
+}
+.attorneys-content{
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+    position: absolute;
+    
+    bottom: 13%;
+    
+    left: 20%;
+    
+    transform: translate(-13% ,0);
+    
+    color: #fff;
+    
+    text-transform: uppercase;
+    }
+.attorneys-images:hover .attorneys-content{
+    opacity: 1;
+    transform: translate(-13% ,-20%);
+}
+.hgt{
+    /* min-height: 500px; */
+    padding: 100px 0;
+}
+
+/* End Attorneys section*/
+
+/* Starting Language */
+.language{
+
+/* padding: 100px 0; */
+
+margin: 100px 0;
+}
+.language .heading-two{
+
+}
+.language .heading-two h1{
+
+/* color: #204f87; */
+
+/* margin: 100px 0; */
+
+padding: 6px;
+}
+.lang-cont{
+
+}
+.lang-cont h5{
+
+text-transform: uppercase;
+
+color: #f2642c;
+}
+.lang-cont p{
+
+color: #b1b0b1;
+}
+.lang-cont span{
+
+}
+/* Ending Language */
+/* Strting contact part Form part */
+.contact{
+    
+background: #28377e;
+    
+padding: 50px 0;
+}
+form{
+    text-align: center
+
+}
+.contact .heading-two h1{
+    color: #fff;
+}
+/* input{
+    background: transparent;
+} */
+.form-group input::placeholder{
+    color: #fff;
+}
+.form-group textarea::placeholder{
+    color: #fff;
+}
+.form-group input[type='text']{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #6c64a0;
+    border-radius: 0;
+    padding-left: 0%;
+}
+.form-group input[type='email']{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid  #6c64a0;
+    border-radius: 0;
+    padding-left: 0%;
+}
+.btn-custom{
+    background: #f2622c;
+    padding: 6px 35px;
+    border: none;
+    border-radius: 0;
+}
+.form-group textarea{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #6c64a0;
+    border-radius: 0;
+    padding-left: 0%;
+}
+.contact .form-group textarea{
+    background: transparent;
+    /* width: 100%; */
+    resize: none;
+}
+
+/* Ending contact part */
+
+/* Starting Footer part */
+
+.footer_part {
+    /* height: 50px; */
+    align-items: center;
+    background: #0c1234;
+    min-height: auto;
+} 
+.navbar-nav {
+}
+.footer_left {
+    padding: 31px 0%;
+    padding-left: 1%;
+}
+.navbar{
+    list-style: none;
+}
+.navbar {
+    list-style: none;
+    padding-top: 17px;
+    padding-right: 51px;
+}
+/*  */
+/* Ending footer part */
